@@ -1,0 +1,148 @@
+@font-face {
+  font-family: poppins;
+  font-style: normal;
+  font-weight: regular;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+html{
+  font-family: poppins;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.header-upper{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  margin-bottom: 0px;
+}
+
+.head-up-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+}
+
+.Logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.corp-logo{
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 15px 0px 0px;
+}
+
+.corp-motto{
+  margin: 0px;
+  font-size: 20px;
+}
+
+.social-container{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook{
+  height: 35px;
+}
+
+.social{
+  height: 30px;
+  margin: 10px;
+}
+
+.header-lower{
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+}
+
+.low-head-cont{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.head-button{
+  border-right: 1px solid gray;
+  padding: 15px;
+}
+
+.head-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+[class*="col-"]{
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px){
+  /*For mobile*/
+  .col-s-1 {width: 8.33%}
+  .col-s-2 {width: 16.66%}
+  .col-s-3 {width: 25%}
+  .col-s-4 {width: 33.33%}
+  .col-s-5 {width: 41.66%}
+  .col-s-6 {width: 50%}
+  .col-s-7 {width: 58.33%}
+  .col-s-8 {width: 66.66%}
+  .col-s-9 {width: 75%}
+  .col-s-10 {width: 83.33%}
+  .col-s-11 {width: 91.66%}
+  .col-s-12 {width: 100%}
+}
+
+@media only screen and (min-width: 880px){
+  /*For desktop*/
+  .col-1 {width: 8.33%}
+  .col-2 {width: 16.66%}
+  .col-3 {width: 25%}
+  .col-4 {width: 33.33%}
+  .col-5 {width: 41.66%}
+  .col-6 {width: 50%}
+  .col-7 {width: 58.33%}
+  .col-8 {width: 66.66%}
+  .col-9 {width: 75%}
+  .col-10 {width: 83.33%}
+  .col-11 {width: 91.66%}
+  .col-12 {width: 100%}
+}
