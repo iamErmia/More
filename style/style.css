@@ -27,7 +27,6 @@ html{
 .header{
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
 }
 
 .header-upper{
@@ -41,7 +40,7 @@ html{
 
 .head-up-cont{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -96,7 +95,7 @@ html{
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-top: 0px;
+  padding: 0px;
 }
 
 .head-button{
@@ -111,9 +110,73 @@ html{
   text-align: center;
 }
 
+.head-button:hover{
+  background-color: #dfdfdf;
+}
+
 [class*="col-"]{
   width: 100%;
 }
+
+.main {
+  padding: 0px;
+}
+
+.banner{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 700px;
+  background-image: url(../assets/images/amelia-bartlett-OgT83CPGbQI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner-cont {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.welcome{
+  font-weight: bold;
+  font-size: 100px;
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.motto{
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.motivation{
+  background-color: rgba(0,0,0,0.5);
+  padding: 15px 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-size: 20px;
+
+}
+
 
 @media only screen and (min-width: 600px){
   /*For mobile*/
