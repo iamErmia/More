@@ -120,6 +120,8 @@ html{
 
 .main {
   padding: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner{
@@ -129,9 +131,11 @@ html{
   align-items: center;
   text-align: center;
   height: 700px;
+  max-width: 100%;
   background-image: url(../assets/images/amelia-bartlett-OgT83CPGbQI-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  margin-bottom: 35px;
 }
 
 .banner::before {
@@ -149,18 +153,20 @@ html{
   position: relative;
   z-index: 2;
   color: white;
+  max-height: 700px;
 }
 
 .welcome{
   font-weight: bold;
-  font-size: 100px;
+  font-size: 50px;
   padding: 0px;
   margin: 0px;
   text-transform: uppercase;
 }
 
 .motto{
-  font-size: 35px;
+  font-size: 25px;
+  margin-top: 0px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -174,7 +180,123 @@ html{
   letter-spacing: 7px;
   text-transform: uppercase;
   font-size: 20px;
+}
 
+.start-button{
+  background-color: #baff4a;
+  font-size: 18px;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 35px;
+}
+
+.start-button:hover{
+  background-color: #e2ffb3;
+  transform: scale(110%);
+}
+
+.cards-place{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+}
+
+.option-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  max-height: 100%;
+}
+
+@media (max-width: 880px){
+  .cards-place{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .option-card{
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .card-icon{
+    scale: 40%;
+  }
+}
+
+.card-icon{
+  padding: 20px 10px 0px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 0px 0px 10px 2px rgb(0,0,0,0.5);
+  height: auto;
+  flex-wrap: wrap;
+  padding: 2px;
+  flex-shrink: 1;
+}
+
+.card-text{
+  text-align: center;
+  font-size: 30px;
+  max-width: 80%;
+  padding: 18px 20px;
+  max-height: none;
+}
+
+.text-head{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+@media (max-width: 1323px){
+  .text-head{
+    font-size: 30px;
+  }
+}
+
+.text-body{
+  line-height: 300%;
+  font-size: large;
+  max-height: none;
+}
+
+.plus{
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  background-color: #baff4a;
+  color: black;
+  border-radius: 50%;
+  border: none;
+  font-size: 40px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 20px 5px rgba(186,255,74,0.75);
+}
+
+.plus:hover{
+  background-color: #e2ffb3;
+}
+
+@media (min-width: 600px) {
+  .card-text{
+    text-align: left;
+    font-size: 16px;
+  }
 }
 
 
