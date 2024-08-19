@@ -299,6 +299,159 @@ html{
   }
 }
 
+.articles-container{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.articles{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.read-our{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.read-our-cont{
+  text-align: left;
+  width: 10%;
+}
+
+.read-our-title{
+  padding:0px;
+  margin: 5px 15px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.read-our-button{
+  font-size: 20px;
+  background-color: #baff4a;
+  font-weight: bold;
+}
+
+.read-our-button:hover{
+  background-color: #e2ffb3;
+  transform: scale(120%);
+}
+
+@media (max-width: 880px){
+  .read-our{
+    display: flex;
+    flex-direction: column;
+  }
+  .read-our-cont{
+    text-align: center;
+  }
+}
+
+.top-articles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 30px;
+  height: auto;
+}
+
+.side-article{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+}
+
+.side-art-img{
+  max-width: 100%;
+  height: 500px;
+  background-image: url(../assets/images/kal-visuals-644747-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.side-title{
+  text-align: left;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.article-intro{
+  text-align: left;
+  font-size: medium;
+  margin: 20px 0px
+}
+
+.read-button{
+  background-color: #baff4a;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  width: 100px;
+  padding: 10px 20px;
+  margin-bottom: 0px;
+}
+
+.read-button:hover{
+  background-color: #e2ffb3;
+  transform: scale(120%);
+}
+
+.tiny-articles-contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 30px;
+  height: 100%;
+}
+
+.tiny-articles{
+  height: 30%;
+  align-items: center;
+}
+
+.tiny-article-img{
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.tiny-img1{
+  background-image: url(../assets/images/laurine-bailly-1096320-unsplash.jpg);
+}
+
+.tiny-img2{
+  background-image: url(../assets/images/lonely-planet-622111-unsplash.jpg);
+}
+
+.tiny-img3{
+  background-image: url(../assets/images/aiony-haust-783975-unsplash.jpg);
+}
+
+.tiny-article-content{
+  height: 100%;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.tiny-art-head{
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
 
 @media only screen and (min-width: 600px){
   /*For mobile*/
