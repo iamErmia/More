@@ -335,9 +335,8 @@ html{
 }
 
 .read-our-button{
-  font-size: 20px;
+  font-size: 18px;
   background-color: #baff4a;
-  font-weight: bold;
 }
 
 .read-our-button:hover{
@@ -471,6 +470,78 @@ html{
   font-size: 25px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.portfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt-cta{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 100%;
+}
+
+.cta-text{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.check-portfo{
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.check-button{
+  background-color: #baff4a;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-bottom: 0px;
+  border: none;
+}
+
+.check-button:hover{
+  background-color: #e2ffb3;
+  transform: scale(120%);
+}
+
+.imgs{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px;
+  height: 300px;
+}
+
+.portfo-imgs{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.port-img1{
+  background-image: url(../assets/images/alvin-mahmudov-DnJioJ8nhxI-unsplash.jpg);
+}
+
+.port-img2{
+  background-image: url(../assets/images/ben-rosett-WdJkXFQ4VHY-unsplash.jpg);
+}
+
+.port-img3{
+  background-image: url(../assets/images/hardini-lestari-MujZAKea8Lw-unsplash.jpg);
+}
+
+.port-img4{
+  background-image: url(../assets/images/hunters-race-MYbhN8KaaEc-unsplash.jpg);
 }
 
 @media only screen and (min-width: 600px){
