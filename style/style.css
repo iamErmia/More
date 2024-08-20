@@ -330,7 +330,7 @@ html{
 .read-our-title{
   padding:0px;
   margin: 5px 15px;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 300;
 }
 
@@ -374,7 +374,7 @@ html{
 
 .side-art-img{
   max-width: 100%;
-  height: 500px;
+  height: 400px;
   background-image: url(../assets/images/kal-visuals-644747-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -390,7 +390,8 @@ html{
 .article-intro{
   text-align: left;
   font-size: medium;
-  margin: 20px 0px
+  margin: 5px 0px;
+  max-height: none;
 }
 
 .read-button{
@@ -411,19 +412,32 @@ html{
 .tiny-articles-contain{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  gap: 2%;
+  align-items: flex-start;
   text-align: left;
-  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
 }
 
 .tiny-articles{
-  height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
   align-items: center;
+  max-height: 100%;
 }
-
+@media (max-width: 880px){
+  .top-articles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .tiny-article-img{
   height: 100%;
+  display: flex;
   background-size: cover;
   background-position: center;
 }
@@ -441,16 +455,22 @@ html{
 }
 
 .tiny-article-content{
-  height: 100%;
-  align-items: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding-top: 0px;
   padding-bottom: 0px;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 2px;
+  flex-shrink: 1;
 }
 
 .tiny-art-head{
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 600px){
