@@ -351,6 +351,12 @@ html{
   }
   .read-our-cont{
     text-align: center;
+    width: 100%;
+  }
+
+  .read-our-title{
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -439,6 +445,14 @@ html{
   display: flex;
   background-size: cover;
   background-position: center;
+}
+
+.section-options{
+  padding: 10px 5px;
+}
+
+.section-options:hover{
+  background-color: #dfdfdf;
 }
 
 .tiny-img1{
@@ -618,6 +632,79 @@ html{
 
   .enter-mail{
     margin-bottom: 20px;
+  }
+}
+
+.footer{
+  height: auto;
+}
+
+.about{
+  padding: 50px;
+}
+
+.about-logo{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about-txt{
+  width: 60%;
+  line-height: 180%; 
+}
+
+.footer-sections{
+  border-left: 1px solid gray;
+}
+
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 100px 40px 50px;
+}
+
+.fsection-head{
+  font-weight: bold;
+}
+
+@media (max-width: 880px){
+  .about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;;
+  }
+
+  .about-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-sections{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+  }
+
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-options{
+    padding: 5px 20px;
   }
 }
 
