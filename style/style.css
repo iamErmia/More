@@ -544,6 +544,83 @@ html{
   background-image: url(../assets/images/hunters-race-MYbhN8KaaEc-unsplash.jpg);
 }
 
+.sub-sec{
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0px 50px;
+  height: auto;
+}
+
+.sub-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+.sub-txt{
+  font-size: 35px;
+}
+
+.mail-box{
+  height: 50px;
+  max-height: none;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+.enter-mail{
+  padding: 0px;
+  padding-left: 15px;
+  font-size: 15px;
+  border: none;
+}
+
+.subscribe{
+  height: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.subscribe:hover{
+  background-color: #454545;
+}
+
+@media (max-width: 880px){
+  .sub-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .sub-txt{margin: 5px;}
+
+  .mail-box{
+    margin-bottom: 25px;
+    gap: 10px;
+  }
+
+  .enter-mail{
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (min-width: 600px){
   /*For mobile*/
   .col-s-1 {width: 8.33%}
